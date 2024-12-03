@@ -5,12 +5,12 @@ This project develops a machine learning model for environmental sound classific
 ## Project Overview
 ![portrait](images/portrait.png)
 
-Environmental sound recognition plays a crucial role in building intelligent systems for urban areas. By classifying audio signals into specific categories, these systems can enhance urban living through real-time monitoring and automated responses. The project evaluates the effectiveness of CNNs and RNNs in urban sound classification tasks and identifies the best model for accuracy, computational efficiency, and generalizability.
-
+Environmental sound recognition plays a crucial role in building intelligent systems for urban areas. By classifying audio signals into specific categories, these systems can enhance urban living through real-time monitoring and automated responses. The project evaluates the effectiveness of CNNs and RNNs in urban sound classification tasks and identifies the best model for accuracy, computational efficiency, and generalizability. The robustness of the models is also evaluated using the **DeepFool** strategy and the **L2DeepFoolAttack**.
 This project:
 - Utilizes the UrbanSound8K dataset to classify environmental sounds across 10 distinct categories.
 - Implements CNN, RNN, and CRNN architectures to capture both spatial and temporal features of audio data.
 - Optimizes model performance through hyperparameter tuning, feature engineering, and 10-fold cross-validation.
+- Evaluates the model's performance against adversarial data
 
 ## Table of Contents
 - [Dataset Preparation](#dataset-preparation)
@@ -32,7 +32,7 @@ This project:
    - Sound repetition to ensure constant-length vectors are fed into the neural networks.
 
 3. **Exploratory Data Analysis**:
-   Analysis of the dataset revealed class imbalances and foreground/background files. Highlighted key temporal and spectral patterns, guiding the choice of model architectures.
+   Analysis of the dataset revealed class imbalances and foreground/background files. 
 
 ## Deep Learning Architectures
 
