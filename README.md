@@ -6,6 +6,7 @@ This project develops a machine learning model for environmental sound classific
 ![portrait](images/portrait.png)
 
 Environmental sound recognition plays a crucial role in building intelligent systems for urban areas. By classifying audio signals into specific categories, these systems can enhance urban living through real-time monitoring and automated responses. The project evaluates the effectiveness of CNNs and RNNs in urban sound classification tasks and identifies the best model for accuracy, computational efficiency, and generalizability. The robustness of the models is also evaluated using the **DeepFool** strategy and the **L2DeepFoolAttack**.
+
 This project:
 - Utilizes the UrbanSound8K dataset to classify environmental sounds across 10 distinct categories.
 - Implements CNN, RNN, and CRNN architectures to capture both spatial and temporal features of audio data.
@@ -37,15 +38,15 @@ This project:
 ## Deep Learning Architectures
 
 ### Convolutional Neural Networks (CNNs)
-- Capture spatial features from spectrograms.
-- Designed with multiple convolutional layers, max pooling, and dropout for robust feature extraction.
+Capture spatial features from spectrograms.
+Designed with multiple convolutional layers, max pooling, and dropout for robust feature extraction.
 
 ### Recurrent Neural Networks (RNNs)
-- Exploit temporal dependencies in audio signals.
-- Built using gated recurrent units (GRUs) or long short-term memory (LSTM) layers for sequence modeling.
+Exploit temporal dependencies in audio signals.
+Built using gated recurrent units (GRUs) or long short-term memory (LSTM) layers for sequence modeling.
   
 ### Convolutional Recurrent Neural Networks (CRNNs)
-- Convolutional layers are applied before feeding data into the RNN model, aiming to leverage the strengths of both convolutional and recurrent networks.
+Convolutional layers are applied before feeding data into the RNN model, aiming to leverage the strengths of both convolutional and recurrent networks.
 ## Results
 
 | **Model** | **Accuracy** | **F1 Score** | **Recall** |
@@ -75,14 +76,15 @@ This project highlights the potential of deep learning models for environmental 
 
   
 ## Conclusion
-The results demonstrate the feasibility of applying deep learning techniques to environmental sound classification. Both CNN and RNN models provide valuable insights into urban sound patterns, offering a foundation for further research and practical applications.
+The results demonstrate the feasibility of applying deep learning techniques to environmental sound classification. However, both CNN and RNN models have shown to be less robust when faced with adversarial examples, indicating there is significant room for improvement.
 
 ## Contributors
-- [Alejandro Morís Lara](https://github.com/alejandromorislara)
-- [Alfredo Flórez de la Vega](https://github.com/alfredofdlv)
+[Alejandro Morís Lara](https://github.com/alejandromorislara)
+
+[Alfredo Flórez de la Vega](https://github.com/alfredofdlv)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- UrbanSound8K Dataset: [https://urbansounddataset.weebly.com/](https://urbansounddataset.weebly.com/)
+UrbanSound8K Dataset: [https://urbansounddataset.weebly.com/](https://urbansounddataset.weebly.com/)
